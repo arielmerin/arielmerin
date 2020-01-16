@@ -10,10 +10,10 @@
     <body>
         <header class="header" >
             <div>
-                <figure>
+                <figure class="logo">
                     <img src="img/ari3.png" width="80" height="80" alt="Logo de Ariel en la web"/> 
                 </figure>
-                <nav> 
+                <nav class="menu"> 
                     <ol>
                         <li>
                             <a class="link" href="#history"> Breve historia de vida</a>
@@ -40,8 +40,8 @@
                 </nav>
             </div>
         </header>
-        <section id="introd">
-            <h1>Este es el <strong> esfuerzo </strong>  de Ariel <br> por plasmar <strong> su vida </strong> </h1> 
+        <section id="hero">
+            <h1>Este es el <strong> esfuerzo </strong>  de Ariel  por plasmar <strong> su vida </strong> </h1> 
             <img src="img/arielbw.jpg" width="180px" alt="Imagen principal del sitio"/> 
         </section>
         <section id="family">
@@ -135,9 +135,8 @@
         </section>
         <section id="teraphy">
             Lugar para donar a la <strong>terapia </strong> 
-
+            También sirve para agradecer a mi terapeuta que me ha rescatado tantas veces como han sido necesarias y me ha permitido crecer a su lado, con su ayuda, sus consejos y toda esa sabiduría.
             <form action=""></form>
-        </section>
         </section>
         <section id="contact">
             <h1>
@@ -145,7 +144,6 @@
             </h1>
             <h2>
             	Apartado donde puedes ponerte en ocntacto conmigo para hacer algo en colaboración, los temas que me interesan son:
-
             </h2>
             <ol>
                 <li>Astronomía y cosmología</li>
@@ -157,8 +155,8 @@
                 <li>Lectura de temas críticos de género</li>
                 <li>Eventos culturales</li>
             </ol>
-            <div class="container">
-            	<h1 id="hobies">
+            <div class="hobbies">
+            	<h1 id="hobies_title">
             		Pasatiempos favoritos de Ariel
             	</h1>
             	<ol>
@@ -168,16 +166,18 @@
             	    <li>Disfruto pasar tiempo y buenos momentos con mi familia y amigos</li>
             	</ol>
             </div>
-            <form action="sus/text.txt">
-                <h3>Pongámonos en contacto</h3>
-                <label for="email"> Aquí puedes ingresar tu email</label>
-                <input type="datetime" placeholder="correo@correo.com" id="email">
-                <input type="submit" value="enviar">
-                <input type="button" value="cancelar">
-            </form>
+            <section class="contact_form">
+                <form action="sus/text.txt" class="form_email">
+                    <h3>Pongámonos en contacto</h3>
+                    <label for="email"> Aquí puedes ingresar tu email</label>
+                    <input type="datetime" placeholder="correo@correo.com" id="email">
+                    <input type="submit" value="enviar">
+                    <input type="button" value="cancelar">
+                </form>               
+            </section>
             <a href="https://www.facebook.com/ar.iellette" target="_blank">Fb</a>
         </section>
-        <footer id="footer">
+        <footer class="footer" >
             footer
         </footer>
     </body>
