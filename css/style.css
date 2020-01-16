@@ -1,3 +1,11 @@
+/*reglas
+selectores
+declaraciones
+propiedades
+valores*/
+
+/* Selectores de etiquetas como body o header*/
+
 body{
     background: #FFD9D9;
     font-family: arial;
@@ -6,7 +14,7 @@ header{
     background: beige;
     
 }
-#introd{
+#hero{
     background: #E3B3B3;
     font-style: oblique;
 }
@@ -20,4 +28,14 @@ header{
 	background: #A44040;
 	color: #EAE0E0;
 	text-align: left;
+}
+
+/* Selectores descendente elememto hijo de otro*/
+body header div nav ol li a{
+    color: #675353
+}
+
+.link{
+    font-family: arial-verdana ;
+    color: #844D4D;
 }
