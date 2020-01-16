@@ -8,15 +8,23 @@ valores*/
 
 body{
     background: #FFD9D9;
-    font-family: arial;
+    font-family: 'Poppins';
 }
+
+h1,
+h2,
+h3,
+h4{
+    font-family: 'Oswald', sans-serif;
+}
+
 header{
     background: beige;
     
 }
 #hero{
     background: #E3B3B3;
-    font-style: oblique;
+    font-size: 35px;
 }
 #family{
     background: #B4EFDC;
