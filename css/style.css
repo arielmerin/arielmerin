@@ -23,7 +23,7 @@ h4{
 header{
     background: beige;
     height: 300px;
-    
+    display: flex;
 }
 header a{
     text-decoration: none;
@@ -92,10 +92,12 @@ body header div nav ol li a{
 .hero_image{
     width: 300px;
     margin: 0px 30px 0px 30px;
+    justify-self: right;
 }
 
 .hero figure{
     margin: 20px 0px 0px 0px;
+    justify-self: right;
 }
 li{
     display: inherits;
@@ -109,11 +111,18 @@ li{
     deformarse pueda saltar a la siguiente linea*/
     flex-wrap: wrap;
     /*flex-direction: column-reverse;*/
+    /*Sirve para establecer la alineación de los elementos
+    de manera horixonatl con space-around, space-between,
+    space-evenly */
+    justify-content: center;
+    /* */
+    align-items: center;
 }
 
 .box{
-    width: 200px;
-    height: 200px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
     /* Este es el orden del borde, al principio lleva 
     el grueso del borde, luego si es solido, punteado o
     dasheado y al final el color*/
