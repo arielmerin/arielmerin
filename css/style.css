@@ -20,11 +20,29 @@ h4{
 
 header{
     background: beige;
+    height: 300px;
     
+}
+header a{
+    text-decoration: none;
+}
+
+.menu ol{
+    list-style-type: none;
+    display: block;
+}
+h1 strong{
+    color: #9A3B68;
 }
 #hero{
     background: #E3B3B3;
     font-size: 35px;
+    /* sirve para la separación de los renglones*/
+    line-height: 50px;
+    letter-spacing; 0.15px;
+    /* Color de la fuente*/
+    color: #FFFFFF;
+    text-transform: uppercase;
 }
 #family{
     background: #B4EFDC;
@@ -46,4 +64,12 @@ body header div nav ol li a{
 .link{
     font-family: arial-verdana ;
     color: #844D4D;
+}
+
+.hero_text{
+    width: 500px;
+}
+
+.hero_image{
+    width: 300px;
 }
