@@ -9,6 +9,8 @@ valores*/
 body{
     background: #FFD9D9;
     font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
 }
 
 h1,
@@ -34,27 +36,25 @@ header a{
 h1 strong{
     color: #9A3B68;
 }
-.hero{
-    background: #E3B3B3;
-    font-size: 35px;
-    /* sirve para la separación de los renglones*/
-    line-height: 50px;
-    letter-spacing: 0.15px;
-    /* Color de la fuente*/
-    color: #FFFFFF;
-    text-transform: uppercase;
-    margin: 0px 0px, 0px, 0px;
-}
 #family{
     background: #B4EFDC;
+    padding: 15px;
 }
 #photos{
     background: #efffb6;
+    padding: 15px;
 }
 #eklesia{
-	background: #A44040;
+    background: #A44040;
 	color: #EAE0E0;
 	text-align: left;
+}
+
+#history{
+    padding: 15px 15px;
+    background: rgb(255, 127, 8);
+    color: #FFFFFF;
+
 }
 
 /* Selectores descendente elememto hijo de otro*/
@@ -67,6 +67,19 @@ body header div nav ol li a{
     color: #844D4D;
 }
 
+.hero{
+    background: #E3B3B3;
+    font-size: 35px;
+    /* sirve para la separación de los renglones*/
+    line-height: 50px;
+    letter-spacing: 0.15px;
+    /* Color de la fuente*/
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+}
 .hero_text{
     width: 500px;
     margin: 30px 0px 0px 0px;
@@ -83,4 +96,30 @@ body header div nav ol li a{
 
 .hero figure{
     margin: 20px 0px 0px 0px;
+}
+li{
+    display: inherits;
+}
+
+.flexbox{
+    /*Hace a nuestras cajas flexibles pero puede cambiar el
+    tamaño de las mismas por lo tanto no se recomienda */
+    display: flex;
+    /* Permite que si un elemento no cabe y se ele impidió
+    deformarse pueda saltar a la siguiente linea*/
+    flex-wrap: wrap;
+    /*flex-direction: column-reverse;*/
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    /* Este es el orden del borde, al principio lleva 
+    el grueso del borde, luego si es solido, punteado o
+    dasheado y al final el color*/
+    border: 1px solid salmon;
+    /* Valor entre 0 y 1 donde 0 es no se puede deformar el
+    elemento y 1 es puede deformarse completamente si fuese 
+    necesario*/
+    flex-shrink: 0;
 }
