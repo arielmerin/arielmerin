@@ -23,7 +23,10 @@ h4{
 header{
     background: beige;
     height: 300px;
-    display: flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
 }
 header a{
     text-decoration: none;
@@ -79,11 +82,12 @@ body header div nav ol li a{
     text-transform: uppercase;
     margin: auto;
     display: flex;
-    padding: 20px;
+    padding: 7%;
+    flex-wrap: wrap;
 }
 .hero_text{
     width: 500px;
-    margin: 30px 0px 0px 0px;
+    margin: 0px 0px 0px;
 }
 
 .hero_text h1{
@@ -92,12 +96,12 @@ body header div nav ol li a{
 
 .hero_image{
     width: 300px;
-    margin: 0px 30px 0px 30px;
+    margin: 0;
     justify-self: right;
 }
 
 .hero figure{
-    margin: 20px 0px 0px 0px;
+    margin:  0px 0px 0px;
     justify-self: right;
 }
 li{
@@ -131,15 +135,48 @@ li{
     elemento y 1 es puede deformarse completamente si fuese 
     necesario*/
     flex-shrink: 0;
+    align-content: center;
 }
+.flexbox_img{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box_img{
+    justify-content: center;
+    align-content: center;
 
+}
+figure{
+    align-content: center;
+    justify-content: center;
+}
+header figure img{
+    margin: auto;
+}
 
 /* 
 Empezar desde el emedia query más grande si se está haciendo 
 desktop first
 
 */
+
 @media screen and (max-width: 768px) and (min-width: 700px){
-    body{
+    .flexbox_img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+    }
+    .box_img{
+        justify-content: center;
+        align-content: center;
+
+    }
+    figure{
+        margin: auto;
+        align-content: center;
+    }
+    img{
+        justify-content: right;
     }
 }
