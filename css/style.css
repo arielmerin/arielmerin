@@ -139,12 +139,12 @@ li{
 }
 .flexbox_img{
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
+    align-content: center;
 }
 .box_img{
     justify-content: center;
     align-content: center;
-
 }
 figure{
     align-content: center;
