@@ -144,7 +144,9 @@ li{
 .box_img{
     justify-content: center;
     align-content: center;
-
+    display: flex;
+    padding: 3%;
+    border-image-width: auto;
 }
 figure{
     align-content: center;
