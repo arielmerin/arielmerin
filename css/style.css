@@ -33,9 +33,9 @@ header{
 }
 
 .menu li{
-    list-style-type: none;
     display: inline;
     margin: 2%;
+    background: #EAE0E0;
 }
 h1 strong{
     color: #9A3B68;
