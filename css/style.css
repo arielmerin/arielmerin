@@ -22,7 +22,7 @@ h4{
 
 header{
     background: beige;
-    height: 300px;
+    height: 180px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -46,9 +46,11 @@ h1 strong{
 }
 #photos{
     background: #efffb6;
-    padding: 15px;
+    padding: 15px 15px 15px 15px;
+    margin: 15px;
 }
 #eklesia{
+    padding: 15px 15px 15px 15px;
     background: #A44040;
 	color: #EAE0E0;
 	text-align: left;
@@ -59,13 +61,27 @@ h1 strong{
     margin: 15px;
     background: rgb(255, 127, 8);
     color: #FFFFFF;
-
+}
+#contact{
+    padding: 15px 15px 15px 15px;
+    background: rgb(6, 51, 88);
+    color: white;
+}
+#therapy{
+    padding: 15px 15px 15px 15px;
+    margin: 15px;
+    background: rgb(48, 5, 56);
+    color: white;
+}
+.footer{
+    padding: 15px 15px 15px 15px;
+    margin: 15px;
+    background: rgb(208, 151, 218);
+    color: rgb(48, 5, 56);
+    align-content: center;
+    justify-content: center;
 }
 
-/* Selectores descendente elememto hijo de otro*/
-body header div nav ol li a{
-    color: #675353
-}
 
 .link{
     font-family: arial-verdana ;
@@ -83,7 +99,7 @@ body header div nav ol li a{
     text-transform: uppercase;
     margin: auto;
     display: flex;
-    padding: 7%;
+    padding: 5%;
     flex-wrap: wrap;
 }
 .hero_text{
@@ -92,7 +108,7 @@ body header div nav ol li a{
 }
 
 .hero_text h1{
-    margin: 30px 0px 0px 0px;
+    margin: 30px 0px 30px 0px;
 }
 
 .hero_image{
