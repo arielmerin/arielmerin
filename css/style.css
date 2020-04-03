@@ -28,13 +28,14 @@ header{
     align-content: center;
     justify-content: center;
 }
-header a{
+.header_a{
     text-decoration: none;
 }
 
-.menu ul{
+.menu li{
     list-style-type: none;
-    display: ruby;
+    display: inline;
+    margin: 2%;
 }
 h1 strong{
     color: #9A3B68;
