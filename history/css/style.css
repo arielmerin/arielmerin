@@ -19,7 +19,10 @@ h3,
 h4{
     font-family: 'Oswald', sans-serif;
 }
-
+h1{
+    font-size: 40px;
+    align-content: center;
+}
 header{
     background: beige;
     height: 300px;
@@ -55,9 +58,16 @@ h1 strong{
 
 #history{
     padding: 15px 15px 15px 15px;
-    margin: 15px;
-    background: rgb(255, 127, 8);
-    color: #FFFFFF;
+    margin: 0px;
+    background: rgb(247, 193, 142);
+    color: black;
+
+}
+#coronavirus{
+    padding: 15px 15px 15px 15px;
+    margin: 0px;
+    background: rgb(191, 240, 193);
+    color: black;
 
 }
 
