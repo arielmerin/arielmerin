@@ -1,13 +1,7 @@
-/*reglas
-selectores
-declaraciones
-propiedades
-valores*/
-
-/* Selectores de etiquetas como body o header*/
 
 body{
     background: #FFD9D9;
+    margin: auto;
     font-family: 'Poppins';
     margin: 0;
     padding: 0;
@@ -68,10 +62,8 @@ h1 strong{
     margin: 0px;
     background: rgb(191, 240, 193);
     color: black;
-
 }
 
-/* Selectores descendente elememto hijo de otro*/
 body header div nav ol li a{
     color: #675353
 }
