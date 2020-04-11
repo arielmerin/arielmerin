@@ -144,6 +144,8 @@ li{
      color: #9A3B68;
      font-size: 50px;
      font-family: 'Oswald', sans-serif;
+     text-transform: uppercase;
+     
  }
  .write h1 strong{
      color: #FFFFFF;
