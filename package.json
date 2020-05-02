@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/arielmerin/arielmerin.github.io/issues"
   },
-  "homepage": "https://github.com/arielmerin/arielmerin.github.io#readme"
+  "homepage": "https://github.com/arielmerin/arielmerin.github.io#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
