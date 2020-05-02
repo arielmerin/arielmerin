@@ -1,0 +1,19 @@
+{
+  "name": "arielmerin.github.io",
+  "version": "1.0.0",
+  "description": "Web page for me and myself",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arielmerin/arielmerin.github.io.git"
+  },
+  "author": "Ariel Merino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arielmerin/arielmerin.github.io/issues"
+  },
+  "homepage": "https://github.com/arielmerin/arielmerin.github.io#readme"
+}
