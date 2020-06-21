@@ -21,15 +21,12 @@ h4{
 }
 
 header{
-    background: beige;
+    background: #FFD9D9;
     height: 180px;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-}
-.header_a{
-    text-decoration: none;
 }
 
 .menu li{
