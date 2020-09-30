@@ -1,58 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title> Ariel esta en la Web </title>
-        <link rel="icon" type="image/png" href="img/worldwide-location.png" alt="Hellox"/>
-        <link rel="stylesheet" href="css/style.css">
-        <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
-        <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-        <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
-        <meta charset=utf-8>
-        <meta name="google-site-verification" content="ceublAaci0VpRghCu_IWTTgQzpFnSV-EMcl0NhZjgGQ" />
-        <meta name=viewport content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <header class="header" >
-            </div>          		
-                <nav class aria-label="" >
-                    <ul>
-                        <li>
-                            <a class="link" href="history/history.html"> Breve historia de vida</a>
-                        </li>
-                        <li>
-                            <a class="link" href="friends/friends.html"> Amigos y personas que amo</a>
-                        </li>
-                        <li>
-                            <a class="link" href="goals/goals.html">Sueños y metas</a>
-                        </li>
-                        <li>
-                            <a class="link" href="places/places.html">Lugares favoritos</a>
-                        </li>
-                        <li>
-                            <a class="link" href="art/art.html">Arte</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <section class="hero">
-            <div class="hero_text">
-            <h1>Este es el <br> <strong> intento </strong>  de Ariel <br> por plasmar <strong> algo de su vida </strong> </h1>
-            </div>
-            <div class="flexbox_img">
-            	<div class="box_img">
-		            <figure>
-		            <img src="img/ariel_principal.jpg" width="100%" alt="Imagen principal del sitio"/>                 
-		            </figure>            		
-            	</div>            	
-            </div>
-        </section>
-        <footer class="footer" >
-            <section class="write">
-                <h2>Seguimos en contrucción ;) </h2>
-            </section>
-        </footer>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <title>Simon Dice</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="title">
+</div>
+
+<div class="gameboard">
+    <div id="azul" class="color azul left" data-color="azul"></div>
+    <div id="magenta" class="color magenta right" data-color="magenta"></div>
+    <div id="naranja" class="color naranja left" data-color="naranja"></div>
+    <div id="verde" class="color verde right" data-color="verde"></div>
+    <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">¡Empezar a jugar!</button>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous"></script>
+<script src="simon.js"></script>
+</body>
 </html>
