@@ -4,26 +4,33 @@ const azul = document.getElementById('azul')
 const magenta = document.getElementById('magenta')
 const verde = document.getElementById('verde')
 const naranja = document.getElementById('naranja')
-const ULTIMO_NIVEL = 3
+const ULTIMO_NIVEL = 10
 
 class Juego{
     constructor() {
-
         this.inicializar()
         this.generarSecuencia()
         setTimeout(this.siguienteNivel, 500)
 
     }
     inicializar(){
-        btnEmpezar.classList.add('hide')
+        this.inicializar= this.inicializar.bind(this)
         this.elegirColor= this.elegirColor.bind(this)
         this.siguienteNivel = this.siguienteNivel.bind(this)
+        this.toggleBtnEmpezar()
         this.nivel = 1
         this.colores = {
             azul,
             magenta,
             verde,
             naranja
+        }
+    }
+    toggleBtnEmpezar(){
+        if(btnEmpezar.classList.contains('hide')){
+            btnEmpezar.classList.remove('hide')
+        }else {
+            btnEmpezar.classList.add('hide')
         }
     }
     generarSecuencia(){
@@ -93,9 +100,14 @@ class Juego{
     }
     ganoElJuego(){
         swal('Felicidades', '¡Ganste el juego!', "success")
+            .then(this.inicializar)
     }
     perdioElJuego(){
         swal('Error', 'Lamentablemente perdiste el juego\nSígelo intentando', "error")
+            .then(() => {
+                this.eliminarEventosClic()
+                this.inicializar()
+            })
     }
     elegirColor(ev){
         /**
@@ -112,9 +124,10 @@ class Juego{
             if (this.subnivel === this.nivel){
                 this.nivel++
                 // this.eliminarEventosClick()
-                if (this.nivel === (ULTIMO_NIVEL + 1)){
+                if (this.nivel === (ULTIMO_NIVEL + 1)) {
                     this.ganoElJuego()
-                }else {
+                }
+                else {
                     setTimeout( this.siguienteNivel, 1500)
                 }
             }
