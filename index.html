@@ -1,23 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <title>Simon Dice</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog personal | Ariel Merino</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./assets/icon/font/flaticon.css">
+    <link rel="shorcut icon" href="./assets/img/icons8-omega-50.png" type="image/x-icon">
 </head>
 <body>
-<div class="title">
-</div>
-
-<div class="gameboard">
-    <div id="azul" class="color azul left" data-color="azul"></div>
-    <div id="magenta" class="color magenta right" data-color="magenta"></div>
-    <div id="naranja" class="color naranja left" data-color="naranja"></div>
-    <div id="verde" class="color verde right" data-color="verde"></div>
-    <button id="btnEmpezar" class="btn-start" onclick="empezarJuego()">¡Empezar a jugar!</button>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous"></script>
-<script src="simon.js"></script>
+    <header>
+        <section class="header__icons--container">
+            <div class="icons">
+                <a href="https://www.facebook.com/ar.iellette" target="_blank"><span class="fimanager flaticon-001-facebook"></span></a>
+                <a href="https://twitter.com/arielmerinos" target="_blank"><span class="fimanager flaticon-002-twitter"></span></a>
+                <a href="https://www.linkedin.com/in/arielmerino/"><span class="fimanager flaticon-010-linkedin"></span></a>
+                <a href="https://www.instagram.com/arieeel.merino/" target="_blank"><span class="fimanager flaticon-011-instagram"></span></a>
+            </div>
+        </section>
+        <nav>
+            <section class="nav__logo--container">
+                <a href="#"><img src="./assets/img/ari.jpg" alt="Logotipo de mi blog personal"></a>
+            </section>
+            <section class="profile__link">
+                <a href="./profile.html">Sobre mí</a>
+            </section>
+        </nav>
+    </header>
+    <main class="home__main">
+        <section class="main__container">
+            <div class="main__container--text">
+                <h2>Bienvenidx</h2>
+            </div>
+            <button class="main__container--button">
+                <a href="#">¡Entra ya!</a>  
+            </button>
+        </section>
+    </main>
 </body>
 </html>
